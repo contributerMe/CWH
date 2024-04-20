@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nimesh's Portfolio</title>
+  <!-- CSS temp -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,00;0,900;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 90px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      font-size: 1.02rem;
+      color: rgb(128, 128, 213);
+    }
+
+    .left {
+      font-size: 1.5rem;
+      align-items: center;
+    }
+
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 3.2px;
+      margin: 20px 60px;
+    }
+
+    /* for hand */
+    .wave-hand {
+      animation-name: wave-animation;
+      /* Refers to the name of your @keyframes element below */
+      animation-duration: 2.5s;
+      /* Change to speed up or slow down */
+      animation-iteration-count: infinite;
+      /* Never stop waving :) */
+      transform-origin: 70% 70%;
+      /* Pivot around the bottom-left palm */
+      display: inline-block;
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0.0deg)
+      }
+
+      10% {
+        transform: rotate(14.0deg)
+      }
+
+      /* The following five values can be played with to make the waving more or less extreme */
+      20% {
+        transform: rotate(-8.0deg)
+      }
+
+      30% {
+        transform: rotate(14.0deg)
+      }
+
+      40% {
+        transform: rotate(-4.0deg)
+      }
+
+      50% {
+        transform: rotate(10.0deg)
+      }
+
+      60% {
+        transform: rotate(0.0deg)
+      }
+
+      /* Reset for the last half to pause */
+      100% {
+        transform: rotate(0.0deg)
+      }
+    }
+
+
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 80px 0;
+    }
+
+    .firstSection>div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 2rem;
+    }
+
+    .rightSection img {
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    .purple {
+      color: rebeccapurple;
+      font-size: 2.0rem;
+      font-weight: 600;
+    }
+
+    #element {
+      color: rebeccapurple;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .secondSection {
+      margin: 0;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+    }
+
+
+    figure {
+      margin: 55px 30px 10px 30px;
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+figure > * {
+  grid-area: 1/1;
+  transition: .4s;
+}
+
+figcaption{
+  margin-left: 10px;
+  color: black;
+  font-weight: 600;
+  background-color: rgba(139, 140, 200, 0.351);
+}
+figure:hover img {
+  transform: scale(1.2);
+}
+
+.secondSectiondiv{
+  margin : 10px 0px 20px 40px;
+}
+.secondSectiondiv{
+  margin : 10px 0px 20px 40px;
+}
+ .project-text{
+  font-size: 1.5rem;
+  margin :40px 100px;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  background-color: #11284a;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("https://gifdb.com/images/high/upbeat-music-sound-wave-1uotbww4xs4eka6o.gif");
+}
+footer .social_icon, footer .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li{
+  list-style: none;
+}
+footer .social_icon li a{
+ font-size: 2em;
+ color: #fff;
+ margin: 0 10px;
+ display: inline-block;
+ transition: 0.5s;
+}
+footer .menu li a{
+ font-size: 1.2em;
+ color: #fff;
+ margin: 0 10px;
+ display: inline-block;
+ text-decoration: none;
+ opacity: 0.75;
+}
+footer .menu li a:hover{
+ opacity: 1;
+}
+
+footer .social_icon li a:hover{
+ transform: translate(-10px);
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png) ;
+  background-size: 1000px 100px;
+
+}
+footer .wave #wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+
+
+
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Nimesh's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/Resume.html">Resume</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main section of website -->
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">Hi <span class="wave-hand">👋</span> my name is <span class="purple">Nimesh</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightSection"><img src="/devimg1.png"></div>
+    </section>
+
+    <hr>
+
+    <!-- Section 2 -->
+    <h2 style="margin-left:80px;">Projects and CourseWork</h2>
+    <section class="secondSection">
+      
+        <figure class="image-container">
+          <img id="hover-image1" class="img1" src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Project 1</figcaption>
+      </figure>
+      
+        <figure class="image-container">
+          <img id="hover-image2" src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Project 2</figcaption>
+      </figure>
+      
+        <figure class="image-container">
+          <img id="hover-image3" src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Project 3</figcaption>
+      </figure>
+      
+        <figure class="image-container">
+          <img id="hover-image4" src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Project 4</figcaption>
+      </figure>
+      </section>
+      <div id="text-content" class = "project-text">
+          Hover on project to see the details. Click on image for source code 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti facilis quasi iusto architecto, vero quisquam magni possimus fuga reiciendis quia ea voluptates ratione quos consequatur aperiam corporis minima eius quaerat cum dolorem praesentium voluptatibus quo? Neque.
+      </div>
+    
+  </main>
+
+
+  <!-- Footer -->
+<footer>
+  
+<ul class="social_icon">
+  <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li></li>
+</ul>
+
+<ul class="menu">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">item3</a></li>
+  <li><a href="#">Resume</a></li>
+  <li><a href="#">Contact me</a></li>
+</ul>
+<p>&copy; 2022 Nimesh Maslekar | All rights reserved.</p>
+
+</footer>
+
+
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['CS Student', 'Programmar', 'Web Developer', 'ML Enthusiast'],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 50,
+    });
+  </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script> 
+</body>
+
+</html>
